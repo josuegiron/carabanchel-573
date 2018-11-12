@@ -2161,14 +2161,15 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		background-image: url("../../images/header.jpg");
-		background-size: cover;
+		background: url(images/prueba5.jpg) 0 0 / cover;
+  		background-size: 100% 100%;
 		background-position: center center;
-		background-attachment: fixed;
+
 		color: #fff;
 		text-align: center;
 		padding: 7.5em 0 2em 0;
 		cursor: default;
+		
 	}
 
 		#header:before {
@@ -2335,6 +2336,12 @@ input, select, textarea {
 
 				#nav > ul > li > ul {
 					display: none;
+				}
+
+				#nav > ul > li > a:hover {
+					text-decoration: underline;
+					text-decoration-color: gray;
+
 				}
 
 	.dropotron {
@@ -3111,3 +3118,6 @@ input, select, textarea {
 					}
 
 	}
+
+
+	

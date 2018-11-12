@@ -1,0 +1,19 @@
+html,
+body {
+  font-size: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  background: url(prueba4.jpg) 0 0 / cover;
+  background-size: 100% 100%;
+}
+
+img {
+  width: 100%;
+    height: 100%;
+    display: none;
+}
