@@ -8,7 +8,7 @@
 .ir-arriba {
 	padding:20px;
 	display:inline-block;
-	background:rgba(239, 131, 118, 0.8);
+	background-color:rgba(72, 57, 73, 0.5);
 	color:#ffff;
 	position: fixed;
 	font-size:20px;
@@ -20,5 +20,22 @@
 }
 
 .ir-arriba:hover{
-  background:rgba(239, 131, 118, 1);
+  background-color: rgba(239, 131, 118, 0.75);
+}
+.service{
+  position: relative;
+}
+.service div{
+  display:inline-block;
+  padding-right:1em;
+  padding-bottom:1em;
+  word-wrap: break-word;
+}
+.service .ico{
+  width: 2em;
+ 
+}
+
+.service div:hover{
+  color: rgba(239, 131, 118, 1);
 }

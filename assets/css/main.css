@@ -14,7 +14,7 @@ code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
 u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
+tfoot, thead, tr, th, td, .article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
@@ -25,7 +25,7 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
-article, aside, details, figcaption, figure,
+.article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
@@ -1742,21 +1742,21 @@ input, select, textarea {
 
 		}
 
-/* Sections/Article */
+/* Sections/.article */
 
-	section, article {
+	section, .article {
 		margin-bottom: 3em;
 	}
 
-		section > :last-child, section:last-child, article > :last-child, article:last-child {
+		section > :last-child, section:last-child, .article > :last-child, .article:last-child {
 			margin-bottom: 0;
 		}
 
-		section.special > header, section.special > footer, article.special > header, article.special > footer {
+		section.special > header, section.special > footer, .article.special > header, .article.special > footer {
 			text-align: center;
 		}
 
-	.row > section, .row > article {
+	.row > section, .row > .article {
 		margin-bottom: 0;
 	}
 
@@ -2573,34 +2573,36 @@ input, select, textarea {
 			}
 
 		.carousel .reel {
-			height: 34em;
+			height: 36em;
 			white-space: nowrap;
 			position: relative;
 			-webkit-overflow-scrolling: touch;
 			padding: 0 2em 0 2em;
 		}
 
-		.carousel article {
-			display: inline-block;
+		.carousel .article {
+			display: inline-flex;
+			-webkit-display: inline-flex;
+			justify-content: center;
 			width: 18em;
-			height: 95%;
+			height: 100%;
 			background: #fff;
-			text-align: center;
 			padding: 0 1em 3em 1em;
 			margin: 0 0 0 0;
 			white-space: normal;
 			opacity: 1.0;
+			flex-wrap: wrap;
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
 			transition: opacity 0.75s ease-in-out;
 		}
 
-			.carousel article.loading {
+			.carousel .article.loading {
 				opacity: 0;
 			}
 
-			.carousel article .image {
+			.carousel .article .image {
 				height: 60%;
 				position: relative;
 				left: -1em;
@@ -2609,12 +2611,12 @@ input, select, textarea {
 				margin-right: -2em;
 				margin-bottom: 3em;
 			}
-			.carousel article header {
+			.carousel .article header{
+				display: relative;
+				text-align: center;
 				height: 10%;
-				position: relative;
 			}
-			.carousel article p {
-				
+			.carousel .article p {
 				height: 20%;
 				text-align: center;
 			}
@@ -2638,22 +2640,21 @@ input, select, textarea {
 
 				.carousel .reel {
 					padding: 0 1.5em 0 1.5em;
-					height: 36em;
+					height: 34em;
 				}
 
-				.carousel article {
+				.carousel .article {
 					width: 18em;
-					height: 95%;
 					margin: 0 1.25em 0 0;
 				}
-				.carousel article .image {
+				.carousel .article .image {
 					position: relative;
 					height: 60%;
 				}
-				.carousel article header {
+				.carousel .article header {
 					height: 10%;
 				}
-				.carousel article p {
+				.carousel .article p {
 					height: 20%;
 				}
 
@@ -2738,12 +2739,12 @@ input, select, textarea {
 				padding: 1.25em 0 1.25em 0;
 			}
 
-				.carousel article {
+				.carousel .article {
 					width: 18em;
 					margin: 0 1em 0 0;
 				}
-				.carousel article .image {
-					height: 20em;
+				.carousel .article .image {
+					height: 60%;
 				}
 
 	}
@@ -2780,17 +2781,17 @@ input, select, textarea {
 				margin-bottom: 6em;
 			}
 
-		/* Section/Article */
+		/* Section/.article */
 
-			section, article {
+			section, .article {
 				margin-bottom: 2em;
 			}
 
-				section:last-child, article:last-child {
+				section:last-child, .article:last-child {
 					margin-bottom: 0;
 				}
 
-			.row > section, .row > article {
+			.row > section, .row > .article {
 				margin-bottom: 2em;
 			}
 
@@ -3128,19 +3129,24 @@ input, select, textarea {
 
 				.carousel .reel {
 					padding: 0 0.5em 0 0.5em;
-					height: 32em;
 				}
 
-				.carousel article {
-					width: 14em;
-					height: 90%;
+				.carousel .article {
+					width: 18em;
+					height: 100%;
 					padding-bottom: 2em;
 					margin: 0 0.5em 0 0;
 				}
 
-					.carousel article .image {
+					.carousel .article .image {
 						margin-bottom: 2em;
-						height: 18em;
+						height: 60%;
+					}
+					.carousel .article header {
+						height: 10%;
+					}
+					.carousel .article p {
+						height: 20%;
 					}
 
 	}

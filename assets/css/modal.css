@@ -11,8 +11,9 @@
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    z-index: 20000;
+    padding-top: 4.5em; /* Location of the box */
+    padding-bottom: 3em; 
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -20,6 +21,7 @@
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    
 }
 
 /* Modal Content (image) */
@@ -36,8 +38,8 @@
     width: 80%;
     max-width: 700px;
     text-align: center;
-    color: #ccc;
-    padding: 10px 0;
+    color: rgba(239, 131, 118, 1);;
+    padding: 1em 1em;
 }
 
 /* Add Animation */
@@ -61,17 +63,19 @@
 /* The Close Button */
 .close {
     position: absolute;
-    top: 15px;
-    right: 35px;
+    display: block;
+    z-index: 20001;
+    top: 0.5em;
+    right: 0.5em;
     color: #f1f1f1;
-    font-size: 40px;
+    font-size: 3em;
     font-weight: bold;
     transition: 0.3s;
 }
 
 .close:hover,
 .close:focus {
-    color: #bbb;
+    color: rgba(239, 131, 118, 1);
     text-decoration: none;
     cursor: pointer;
 }
