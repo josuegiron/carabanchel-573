@@ -38,6 +38,7 @@
 
 <body class="homepage is-preload">
 	<span class="ir-arriba icon-arrow-up2" title="¡Ir Arriba!"></span>
+	<span class="ad" title="¡Ir a Apartamentos Carabanchel 573!" onclick="window.location.href='https://www.aptsgt.com/carabanchel573/'" >¡Ir a Apartamentos Carabanchel 573!</span>
 	<div id="page-wrapper">
 
 		<!-- Header -->
@@ -524,8 +525,10 @@
 			$(window).scroll(function () {
 				if ($(this).scrollTop() > 0) {
 					$('.ir-arriba').slideDown(300);
+					$('.ad').slideUp(500);
 				} else {
 					$('.ir-arriba').slideUp(300);
+					$('.ad').slideDown(500);
 				};
 			});
 

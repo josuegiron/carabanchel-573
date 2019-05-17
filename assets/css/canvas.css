@@ -39,3 +39,21 @@
 .service div:hover{
   color: rgba(247, 177, 88, 1);
 }
+
+
+.ad {
+	padding:20px;
+	display:inline-block;
+	background-color:rgba(187, 74, 124, 0.75);
+	color:#ffff;
+	position: fixed;
+	font-size:20px;
+	top:20px;
+	right:20px;
+  cursor:pointer;
+  z-index: 1000000;
+}
+
+.ad:hover{
+  background-color: rgba(187, 74, 124, 0.95);
+}
