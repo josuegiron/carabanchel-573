@@ -20,7 +20,7 @@
 }
 
 .ir-arriba:hover{
-  background-color: rgba(239, 131, 118, 0.75);
+  background-color: rgba(247, 177, 88, 0.75);
 }
 .service{
   position: relative;
@@ -37,5 +37,5 @@
 }
 
 .service div:hover{
-  color: rgba(239, 131, 118, 1);
+  color: rgba(247, 177, 88, 1);
 }
